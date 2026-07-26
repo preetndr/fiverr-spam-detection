@@ -266,6 +266,13 @@ st.markdown(
         -webkit-text-fill-color: transparent;
         animation: textShine 4s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
     }
+    .gradient-text-green {
+        background: linear-gradient(120deg, #059669 30%, #34D399 50%, #059669 70%);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textShine 4s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
+    }
 
     .block-container {
         margin-top: -64px !important;
@@ -427,8 +434,9 @@ if st.button("Analyze User Behavior"):
                 unsafe_allow_html=True,
             )
         else:
+            # Applying the new gradient-text-green class here
             st.markdown(
-                f"<h1 style='text-align:center; font-size:52px; margin:0; font-family:Clash Display, sans-serif; line-height:1;' class='gradient-text'>LEGITIMATE USER</h1>",
+                f"<h1 style='text-align:center; font-size:52px; margin:0; font-family:Clash Display, sans-serif; line-height:1;' class='gradient-text-green'>LEGITIMATE USER</h1>",
                 unsafe_allow_html=True,
             )
 
