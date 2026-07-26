@@ -5,3 +5,6 @@ seaborn
 matplotlib
 ipykernel
 kagglehub
+xgboost
+lightgbm
+streamlit
